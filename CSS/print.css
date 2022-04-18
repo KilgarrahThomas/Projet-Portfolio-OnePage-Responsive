@@ -1,0 +1,143 @@
+/*BODY*/
+
+body{
+
+}
+
+/*TITRES*/
+
+
+h3 {
+	padding : 15px 0 10px 0;
+}
+
+/* LISTES */
+
+ul {
+	padding : 0;
+}
+
+/*IMAGES*/
+
+img {
+	border: 0;
+}
+
+/*HEADER*/
+
+
+/*MAIN*/
+
+main{
+	flex-wrap: nowrap;
+}
+
+/* SECTION */
+
+section{
+	background : rgba(255, 255, 255, 0.5);
+	flex-basis: auto;
+}
+
+#colone1 {
+	order: 1;
+	width : 100%;
+	height: auto;
+}
+
+#cv {
+	order: 2;
+	width : 100%;
+	height: auto;
+	overflow-y : visible;
+}
+
+#colone2 {
+	order : 3;
+	width : 100%;
+	height: auto;
+}
+
+/* NAV */
+
+nav>{
+
+	display: none;
+}
+
+/* ARTICLE */
+
+article{
+	padding : 10px;
+}
+
+#cv{
+	display : block !important;
+}
+
+#formation {
+	page-break-before: always !important;
+	display : block !important;
+}
+
+#activity {
+	display : block !important;
+}
+
+#hobby {
+	display : none;
+}
+
+#hobbyPrint {
+	display: block;
+}
+
+/* SKILLS */
+
+svg.radial-progress {
+	max-width: 80px;
+}
+
+.isolator {
+	height: 112px;
+	width: 112px;
+}
+
+.isolator .caption {
+	background: none;
+	color: #000;
+
+	/* hide it by default */
+	display: block !important;
+}
+
+.isolator .caption p {
+	font-size:50%;
+}
+
+.svgImg{
+	display : none;
+	max-width: 50%;
+	max-height: 50%;
+
+}
+
+.svgDiv {
+	display: none;
+	width: 50%;
+	height: 20%;
+	padding : 15% 0;
+	font-size : 20px;
+}
+
+/* SLIDER */
+
+.flexItem {
+ 	width: 24%;
+	text-align: center;
+}
+
+.hobbies {
+	margin : 10px 5%;
+	width : 90%;
+}

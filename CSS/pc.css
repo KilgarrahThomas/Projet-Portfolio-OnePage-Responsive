@@ -1,0 +1,457 @@
+/*BODY*/
+
+body{
+	background-image : url(../images/background.jpg);
+	background-attachment:fixed;
+}
+
+/*SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #AAAAAA; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EEEEEE; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFF; 
+}
+
+/*TITRES*/
+
+h1, h2 {
+	text-align : center;
+	margin : 0;
+}
+
+section > h2 {
+	display: none;
+}
+
+h3 {
+	margin : 0 10px;
+	padding : 15px 0;
+	font-size: 22px;
+}
+
+h4 {
+	margin : 10px 0 0 0;
+	font-size: 18px;
+}
+
+h5 {
+	padding : 0 0 0 115px;
+	margin : 2px 0;
+	font-size: 16px;
+}
+
+/* TEXTE */
+
+p {
+	padding : 0 0 0 115px;
+	margin : 0;
+}
+
+span {
+	display : inline-block;
+	width : 115px;
+}
+
+/* LISTES */
+
+ul {
+	list-style : none;
+	padding : 0 10px;
+}
+
+/*IMAGES*/
+
+img {
+	border : 5px solid #FFFFFF;
+	float : left;
+	Margin : 5px 20px 5px 40px;
+	
+}
+
+#PDF {
+	max-height : 100px;
+	max-width : 100px;
+	opacity : 1;
+	border-radius : 100px;
+}
+
+/*HEADER*/
+
+header {
+	background : rgba(255, 255, 255, 0.5);
+	width : 90%;
+	margin : 20px auto;
+	padding : 0;
+	height: 120px;
+}
+
+header div {
+	padding : 14px 0;
+}
+
+/*MAIN*/
+
+main{
+	display : flex;
+	flex-direction : column;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+	height :75vh;
+	width : 90%;
+	margin : 25px auto;
+}
+
+/* SECTION */
+
+section{
+	background : rgba(255, 255, 255, 0.5);
+	flex-basis: auto;
+}
+
+#colone1 {
+	order: 1;
+	width : 25%;
+	height : 30vh;
+}
+
+#cv {
+	order: 3;
+	width : 73%;
+	height : 75vh;
+	overflow-y : scroll;
+}
+
+#colone2 {
+	order : 2;
+	width : 25%;
+	height : 45vh;
+}
+
+/* NAV */
+
+nav{
+	margin : 0;
+	padding : 0;
+	position : sticky;
+	top : 0px;
+	width : 100%;
+	z-index : 3;
+	background : rgba(175, 175, 175, 1);
+}
+
+nav>ul{
+	display: flex;
+	flex-direction : row;
+	margin : 0px;
+	padding : 0px;
+}
+
+nav * li{
+	flex-grow : 1;
+	height : 15px;
+	padding: 15px 0;
+	text-align : center;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.nav:hover, .nav:focus, .prev:hover, .prev:focus, .next:hover, .next:focus {
+	transition-property : background-color;
+	transition-duration : 1s;
+	
+	background-color : #FFFFFF
+}
+
+/* ARTICLE */
+
+article{
+	padding : 10px;
+}
+
+#formation {
+	display : none;
+}
+
+#activity {
+	display : none;
+	position : relative;
+}
+
+
+#hobbyPrint {
+	display : none;
+}
+
+/* SVG */
+
+.container {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items:center;
+}
+
+.isolator
+{
+	display:flex;
+	position: relative;
+	height: 182px;
+	width: 182px;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+}
+
+.isolator .caption {
+	margin :10%;
+	padding : 17.5% 0;
+	width : 60%;
+	height : 25%;
+	border-radius : 60%;
+	background:#000;
+	color:#fff;
+	font-weight:bold;
+	text-align : center;
+		
+	/* fix it at the bottom */
+	position:absolute;
+	left:10%;
+	top:10%;
+
+	/* hide it by default */
+	display:none;
+
+	/* opacity setting */
+	filter:alpha(opacity=80);    /* ie  */
+	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */  
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+}
+
+.isolator .caption p {
+	padding:0;	
+	margin:0;
+	font-size:80%;
+}
+
+svg.radial-progress {
+	height: 150px;
+	width: 150px;
+	padding: 1em;
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+svg.radial-progress circle {
+	fill: rgba(0, 0, 0, 0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129;
+	/* Circumference */
+	stroke-width: 8;
+}
+
+.svgImg{
+	display: block;
+	/*max-width: 60%;*/
+	max-height: 60%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	box-sizing: border-box;
+}
+
+.svgDiv {
+	display: table-cell;
+	width: 60%;
+	height: 24%;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	background-color : #000;
+	color : #FFF;
+	font-size : 40px;
+	border-radius : 60%;
+	text-align : center;
+	padding : 18% 0
+}
+
+svg.radial-progress circle.incomplete {
+	opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+	stroke-dasharray: 219.91148575129;
+	/* Circumference */
+}
+
+svg.Html.radial-progress circle {
+	stroke: #F16529;
+}
+
+svg.Css.radial-progress circle {
+	stroke: #33A9DC;
+}
+
+svg.JS.radial-progress circle {
+	stroke: #F0DB4F;
+}
+
+svg.Php.radial-progress circle {
+	stroke: #9A9ACD;
+}
+
+svg.MySQL.radial-progress circle {
+	stroke: #4479a1;
+}
+
+svg.C.radial-progress circle {
+	stroke: #00599d;
+}
+
+svg.Csharp.radial-progress circle {
+	stroke: #813084;
+}
+
+svg.Java.radial-progress circle {
+	stroke: #DE0A17;
+}
+
+svg.Python.radial-progress circle {
+	stroke: #225866;
+}
+
+svg.LG.radial-progress circle {
+	stroke: #000;
+}
+
+svg.Word.radial-progress circle {
+	stroke: #2b77e6;
+}
+
+svg.Excel.radial-progress circle {
+	stroke: #4da462;
+}
+
+svg.Powerpoint.radial-progress circle {
+	stroke: #e57338;
+}
+
+svg.Acces.radial-progress circle {
+	stroke: #8d2429;
+}
+
+svg.Outlook.radial-progress circle {
+	stroke: #f9d341;
+}
+
+/* FORMATION & EXPERIENCE*/
+
+/*.activity {
+	content: '';
+	position: absolute;
+	top: 10px;
+	
+	width: 16px;
+	height: 16px;
+	border-radius: 10px;
+	z-index: 1;
+	box-shadow: 0 0 0 8px rgba(255, 255, 255, .4);
+	background: #FFF;
+}
+
+/* SLIDER */
+
+.item {
+	margin : 10px 5%;
+	width : 90%;
+	border-radius : 10px;
+	
+	/* required to hide the image after resized */
+	overflow:hidden;
+	
+	/* for child absolute position */
+	position:relative;
+}
+
+.item .caption {
+	margin :10%;
+	width : 75%;
+	height : 60%;
+	border-radius : 10px;
+	background:#000;
+	color:#fff;
+	font-weight:bold;
+	text-align : center;
+		
+	/* fix it at the bottom */
+	position:absolute;
+	left:5%;
+	top:5%;
+
+	/* hide it by default */
+	display:none;
+
+	/* opacity setting */
+	filter:alpha(opacity=80);    /* ie  */
+	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */  
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+}
+
+.item .caption p {
+	padding:22.5%;	
+	margin:0;
+	font-size:80%;
+}
+
+.clear {
+	clear:both;	
+}
+
+.controls {
+	width : 100%;
+}
+
+.prev, .next{
+	text-align : center;
+	width : 49%;
+}
+
+.hobbies {
+	margin : 10px 10%;
+	width : 80%;
+	border-radius : 10px;
+}
+
+/* FOOTER */
+
+footer {
+	background : rgba(255, 255, 255, 0.5);
+	width : 90%;
+	margin : 20px auto;
+	padding : 0;
+	text-align: center;
+}
+
+footer > p {
+	padding: 5px;
+}
